@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo 04: CSS</title>
-    <style></style>
+    <style>
+        ol > li {
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            font-size: medium;
+        }
+        ul  li {
+          text-decoration: underline;
+          font-size: medium;
+        }
+    </style>
   </head>
   <body>
     <h1>Exemplo 04: CSS</h1>
-    <ul>
-      <li style="font-size: x-large">Minas Gerais</li>
-      <li style="font-weight: bolder">Rio de Janeiro</li>
+    <ol>
+        <li style="font-size: x-large">Minas Gerais
+            
+            <ul>
+                  <li>Juiz de Fora</li>
+                  <li>Belo Horizonte</li>
+                  <li>Bicas</li>
+                </ul>
+            </li>
+            <li style="font-weight: bolder">Rio de Janeiro</li>
       <li style="font-size: x-small; font-weight: lighter">São Paulo</li>
       <li
         style="
@@ -22,15 +39,12 @@
       >
         Espírito Santo
       </li>
-    </ul>
-    <ul >
-        <li>Juiz de Fora</li>
-        <li>Belo Horizonte</li>
-        <li>Três Rios</li>
-        <li>Bicas</li>
-        <li>Barra Mansa</li>
-        <li>São Paulo</li>
-        <li>Santos</li>
+    </ol>
+    <ul>
+      <li>Três Rios</li>
+      <li>Barra Mansa</li>
+      <li>São Paulo</li>
+      <li>Santos</li>
     </ul>
   </body>
 </html>
