@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo 04: CSS</title>
     <style>
-        ol  li {
+        li.cidade {
             text-decoration: underline;
             text-decoration-style: dashed;
             font-size: medium;
         }
-        body ul > li {
+        li.estado {
             text-decoration: underline;
             text-decoration-style: dotted;
             font-size: medium;
@@ -21,31 +21,30 @@
   <body>
     <h1>Exemplo 04: CSS</h1>
     <ol>
-        <li style="font-size: x-large">Minas Gerais
+        <li class="estado"></li>Minas Gerais
             
             <ul>
-                  <li>Juiz de Fora</li>
-                  <li>Belo Horizonte</li>
-                  <li>Bicas</li>
+                  <li class="cidade">Juiz de Fora</li>
+                  <li class="cidade">Belo Horizonte</li>
+                  <li class="cidade">Bicas</li>
                 </ul>
             </li>
-            <li style="font-weight: bolder">Rio de Janeiro</li>
-      <li style="font-size: x-small; font-weight: lighter">São Paulo</li>
-      <li
-        style="
-          font-size: x-small;
-          font-weight: bolder;
-          font-variant: small-caps;
-        "
-      >
-        Espírito Santo
-      </li>
+            <li class="estado">Rio de Janeiro</li>
+            <ol>
+                <li class="cidade">Barra Mansa</li>
+                <li class="cidade">Três Rios</li>
+        </ol>
+      <li class="estado">São Paulo</li>
+      <ol>
+      <li class="cidade">São Paulo</li>
+      <li class="cidade">Santos</li>
+    </ol>
+      <li class="estado">Espírito Santo</li>
+      <ol>
+          <li class="cidade">Vila Velha</li>
+      </ol>
     </ol>
     <ul>
-      <li>Três Rios</li>
-      <li>Barra Mansa</li>
-      <li>São Paulo</li>
-      <li>Santos</li>
     </ul>
   </body>
 </html>
